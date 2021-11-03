@@ -5,15 +5,13 @@ let fechas = parseInt(
 let puntos = parseInt(
   prompt("Ingrese cuantos puntos de diferencia le saca el primero")
 );
-let puntosPosibles;
-let puntosLlegan;
 
 //Funciones
 if (isNaN(fechas) || isNaN(puntos)) {
   alert("Un campo se encuntra nulo");
 } else {
-  puntosPosibles = fechas * 3;
-  puntosLlegan = puntosPosibles - puntos;
+  let puntosPosibles = fechas * 3;
+  let puntosLlegan = puntosPosibles - puntos;
   if (puntosLlegan > 0) {
     alert("Es posible quedar primero");
   } else {
