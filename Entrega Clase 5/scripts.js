@@ -22,7 +22,6 @@ const ingredienteUno = new Ingrediente(
 );
 
 ingredienteUno.sacarPrecioUndidadMedida();
-// console.log(ingredienteUno);
 
 //Se usa para armar las recetas, los ingredientes son de la lista existente y las cantidad son propias de cada receta
 class Receta {
