@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/maincss.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+    <!--Fuentes-->
+    <title>Costos</title>
+  </head>
+
+  <body>
+    <header>
+      <!--ICONO + 4 LINK-->
+      <ul class="nav">
+        <li>
+          <a class="nav-link" href="#">Ingredientes</a>
+          <!-- href="../index.html#ing" -->
+        </li>
+        <li>
+          <a class="nav-link" href="#">Recetas</a>
+          <!-- href="../index.html#rec" -->
+        </li>
+        <li>
+          <a class="nav-link" href="#">Contacto</a>
+          <!-- "../index.html#cont" -->
+        </li>
+      </ul>
+    </header>
+    <main class="ingredientes">
+      <section class="headlines">
+        <div class="buscador">
+          <input type="search" id="site-search" name="q" aria-label="Search through site content" />
+          <button>Search</button>
+          <button class="btn-abrir-popup" id="btn-abrir-popup">Agregar ingrediente</button>
+        </div>
+      </section>
+      <article class="contenido">
+        <table id="tablaFull">
+          <tr class="noMover">
+            <td class="linea1">NOMBRE</td>
+            <td class="linea1">CANTIDAD</td>
+            <td class="linea1">PRECIO</td>
+            <td class="linea1">FECHA</td>
+          </tr>
+        </table>
+        <div class="overlay" id="overlay">
+          <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">X</a>
+            <h3>Nuevo Ingrediente</h3>
+            <form action="">
+              <div class="contenedor-inputs" id="formulario">
+                <input type="text" id="nombre" placeholder="Nombre" />
+                <input type="text" id="cantidad" placeholder="Cantidad" />
+                <input type="text" id="precio" placeholder="Precio" />
+                <input type="date" id="fecha" />
+              </div>
+              <input type="button" class="btn-enviar" value="Aceptar" id="enviar" />
+              <!-- <input type="button" class="btn-submit" value="Cancelar" /> -->
+            </form>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts.js"></script>
+  </body>
+</html>

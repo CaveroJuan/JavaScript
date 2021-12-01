@@ -1,0 +1,244 @@
+body {
+  background-color: #ffad6e;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png"); }
+
+.index {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" ". ingredientes ." ". recetas .";
+  grid-template-rows: 1fr;
+  grid-template-columns: 15% 70% 15%; }
+  .index .headlines {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .index .ingredientes {
+    border: black solid 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    grid-area: ingredientes;
+    height: 75vh;
+    margin-bottom: 5vh; }
+    .index .ingredientes .buscador {
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .index .ingredientes .buscador input {
+        width: 30vw;
+        height: 4vh;
+        margin-right: 10px;
+        border-radius: 5px; }
+      .index .ingredientes .buscador button {
+        height: 4vh;
+        padding: 0 10px; }
+      .index .ingredientes .buscador .verMas {
+        position: relative;
+        top: 0;
+        left: 200px; }
+    .index .ingredientes .contenido {
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      overflow: scroll;
+      padding: 0 5px;
+      font-size: 20px; }
+      .index .ingredientes .contenido table {
+        width: 100%; }
+        .index .ingredientes .contenido table .noMover {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0px;
+          background-color: white; }
+        .index .ingredientes .contenido table tr {
+          border: black 1px solid; }
+          .index .ingredientes .contenido table tr .linea1 {
+            text-align: center; }
+          .index .ingredientes .contenido table tr td {
+            width: 7vh;
+            border: black 1px solid; }
+  .index .recetas {
+    border: black solid 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    grid-area: recetas;
+    height: 80vh; }
+    .index .recetas .buscador {
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .index .recetas .buscador input {
+        width: 30vw;
+        height: 4vh;
+        margin-right: 10px;
+        border-radius: 5px; }
+      .index .recetas .buscador button {
+        height: 4vh;
+        padding: 0 10px; }
+      .index .recetas .buscador .verMas {
+        position: relative;
+        top: 0;
+        left: 200px; }
+    .index .recetas .contenido {
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .index .recetas .contenido .carousel-item .bloque {
+        display: flex; }
+        .index .recetas .contenido .carousel-item .bloque .card {
+          margin: auto 10px; }
+
+.pie {
+  height: 40vh;
+  display: grid;
+  grid-template-areas: "redes resumen formulario" "redes resumen formulario" "redes resumen formulario";
+  grid-template-rows: 1fr;
+  grid-template-columns: 30% 35% 35%; }
+  .pie .redes {
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .pie .redes .instagram {
+      margin-bottom: 10px; }
+    .pie .redes .whatsapp {
+      margin-top: 10px; }
+  .pie .resumen {
+    grid-area: resumen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px; }
+  .pie .formulario {
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+    .pie .formulario input {
+      width: 80%; }
+    .pie .formulario textarea {
+      width: 80%; }
+
+header {
+  height: 7vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 9999999; }
+  header .nav {
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    border-bottom: black 2px solid; }
+    header .nav .nav-link {
+      font-weight: bold;
+      color: black;
+      font-size: 30px; }
+
+.recetas {
+  border: black solid 1px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px; }
+  .recetas .buscador {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .recetas .buscador input {
+      width: 30vw;
+      height: 4vh;
+      margin-right: 10px;
+      border-radius: 5px; }
+    .recetas .buscador button {
+      height: 4vh;
+      padding: 0 10px; }
+    .recetas .buscador .verMas {
+      position: relative;
+      top: 0;
+      left: 200px; }
+  .recetas .headlines {
+    height: 7vh;
+    display: flex;
+    justify-content: center; }
+  .recetas article {
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px; }
+
+.ingredientes {
+  border: black solid 1px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  border: 0; }
+  .ingredientes .buscador {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .ingredientes .buscador input {
+      width: 30vw;
+      height: 4vh;
+      margin-right: 10px;
+      border-radius: 5px; }
+    .ingredientes .buscador button {
+      height: 4vh;
+      padding: 0 10px; }
+    .ingredientes .buscador .verMas {
+      position: relative;
+      top: 0;
+      left: 200px; }
+  .ingredientes .headlines {
+    height: 7vh;
+    display: flex;
+    justify-content: center; }
+  .ingredientes .contenido {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 50px;
+    font-size: 20px; }
+    .ingredientes .contenido table {
+      width: 100%; }
+      .ingredientes .contenido table .noMover {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        background-color: white; }
+      .ingredientes .contenido table tr {
+        border: black 1px solid; }
+        .ingredientes .contenido table tr .linea1 {
+          text-align: center; }
+        .ingredientes .contenido table tr td {
+          width: 7vh;
+          border: black 1px solid; }
