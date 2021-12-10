@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/form.css" />
+    <link rel="stylesheet" href="../css/maincss.css" />
+    <!--Fuentes-->
+    <title>Lista Ingredientes</title>
+  </head>
+
+  <body>
+    <header>
+      <!--ICONO + 4 LINK-->
+      <ul class="nav">
+        <li>
+          <a class="nav-link" href="../index.html">Home</a>
+          <!-- href="../index.html#ing" -->
+        </li>
+        <li>
+          <a class="nav-link" href="../pages/ingredientes.html">Ingredientes</a>
+          <!-- href="../index.html#ing" -->
+        </li>
+        <li>
+          <a class="nav-link" href="../pages/recetas.html">Recetas</a>
+          <!-- href="../index.html#rec" -->
+        </li>
+        <li>
+          <a class="nav-link" href="#">Contacto</a>
+          <!-- "../index.html#cont" -->
+        </li>
+      </ul>
+    </header>
+    <main class="ingredientes">
+      <section class="headlines">
+        <div class="buscador">
+          <input type="search" class="" id="site-search" name="q" aria-label="Search through site content" />
+          <button class="boton" id="prueba">Search</button>
+          <button class="boton" id="btnAbrirPopupIngrediente">Agregar ingrediente</button>
+        </div>
+      </section>
+      <article class="contenido">
+        <table id="tablaIngredientes">
+          <tr class="noMover">
+            <td class="linea1">NOMBRE</td>
+            <td class="linea1">CANTIDAD</td>
+            <td class="linea1">PRECIO</td>
+            <td class="linea1">FECHA</td>
+            <td class="linea1">EDITAR / ELIMINAR</td>
+          </tr>
+        </table>
+        <!-- Agregar/Editar Ingrediente -->
+        <div class="overlay" id="overlayIngrediente">
+          <div class="popup" id="popupIngrediente">
+            <div class="contenedor_cerrar">
+              <a href="#" id="btnCerrarPopupIngrediente" class="btnCerrarPopup">X</a>
+            </div>
+            <h3>Nuevo Ingrediente</h3>
+            <form action="" id="formularioIngrediente">
+              <div class="contenedor_inputs" id="formulario">
+                <input type="text" id="nombreIngrediente" placeholder="Nombre" />
+                <input type="text" id="cantidadIngrediente" placeholder="Cantidad" />
+                <input type="text" id="precioIngrediente" placeholder="Precio" />
+                <input type="date" id="fechaIngrediente" />
+              </div>
+              <input type="button" class="boton" value="Aceptar" id="btnEnviarIngrediente" />
+            </form>
+          </div>
+        </div>
+        <!-- Eliminar Ingrediente/Recetas -->
+        <div class="overlay" id="overlayEliminar">
+          <div class="popup" id="popupEliminar">
+            <h3>Desea eliminar ...</h3>
+            <div class="contenedor_inputs">
+              <input type="button" class="boton btn_sino" value="Si" id="eliminarSi" />
+              <input type="button" class="boton btn_sino" value="No" id="eliminarNo" />
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts.js"></script>
+  </body>
+</html>

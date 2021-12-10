@@ -1,0 +1,13 @@
+----------------- Agregar ingrediente/recetas
+nombres - si tienen espacios genera problemas con id ( solucion una vez ingresados cambiar todos los espacios por _  en el id)
+rechazar datos de cantidad y precio - si no son numeros
+
+
+
+
+
+----------------- CSS
+barra de buscar/search y bsucar en ingredientes y recetas -- son difrentes y falta separar botones
+ingrediente botones borrar y editar falta separacion
+
+

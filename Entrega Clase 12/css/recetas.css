@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffad6e;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+}
+
+.recetas article {
+  margin: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.recetas .carta {
+  min-height: 30rem;
+  max-height: 30rem;
+  width: 20rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 1rem;
+  margin: 5px;
+}
+.recetas .carta .cont {
+  min-height: 15rem;
+  max-height: 15rem;
+  overflow: hidden;
+  object-position: center center;
+  object-fit: contain;
+}
+
+.recetas .carta .cont .carta__imagen {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.recetas .carta .carta__cuerpo {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: space-between;
+}
+.recetas .carta .carta__cuerpo .borrarEditar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9px;
+}
+.recetas .carta .carta__cuerpo .borrarEditar .delEdit {
+  width: 8.7rem;
+}
+
+.recetas .carta .carta__cuerpo .carta__texto {
+  min-height: 3, 75rem;
+}
+
+.recetas .carta .carta__cuerpo .carta__titulo {
+  margin-bottom: 0.5rem;
+}
+
+.recetas .carta .carta__cuerpo .carta__boton {
+  width: 100%;
+}
